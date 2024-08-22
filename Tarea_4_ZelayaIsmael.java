@@ -25,7 +25,7 @@ public class Tarea_4_ZelayaIsmael {
              matriz[fila][columna]=rd.nextInt(90)+10;
             } 
         }
-        for (int fila = 0; fila < 10; fila++) {
+        for (int fila = 0; fila < matriz.length; fila++) {
             for (int columna = 0; columna < matriz[fila].length; columna++) {
                 System.out.print(matriz[fila][columna]+" ");       
             }
@@ -35,7 +35,7 @@ public class Tarea_4_ZelayaIsmael {
             sumaizquierda+=matriz[fila1][fila1];
         }
             for (int columna1 = 0; columna1 < dimension; columna1++) {
-            sumaderecha+=matriz[columna1][columna1-dimension-1];
+            sumaderecha+=matriz[columna1][dimension-columna1-1];
         }
     
         System.out.println("suma de la derecha "+sumaderecha);
